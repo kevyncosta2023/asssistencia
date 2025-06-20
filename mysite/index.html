@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TopTech Assistência | Troca de Telas, Remoção de Vírus e Muito mais!</title>
+    
+    <link rel="stylesheet" href="style.css" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="TopTech Logo" class="logo" />
+        <nav class="main-nav">
+            <a href="#servicos">Serviços</a>
+            <a href="#orcamento">Orçamento</a>
+            <a href="#contato">Contato</a>
+        </nav>
+        <button class="menu-toggle" aria-label="Abrir Menu">
+            <i class="fas fa-bars"></i>
+        </button>
+    </header>
+
+    <section class="hero-banner">
+        <div class="banner-content">
+            <h1>Bem-vindo à TopTech <br><span>Assistência Técnica</span></h1>
+            <p class="subtitle">Especialista em <span id="typed-services"></span></p>
+            <a href="#orcamento" class="btn-cta">Solicitar Orçamento Agora</a>
+        </div>
+    </section>
+
+    <section id="servicos" class="section-padded">
+        <h2 data-aos="fade-up">Nossos Serviços</h2>
+        <div class="servico-grid">
+            <div class="servico-item" data-aos="fade-up">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Troca de Tela</h3>
+                <p>Telas quebradas? Deixamos seu aparelho como novo!</p>
+            </div>
+            <div class="servico-item" data-aos="fade-up" data-aos-delay="100">
+                <i class="fas fa-battery-full"></i>
+                <h3>Troca de Bateria</h3>
+                <p>Bateria viciada ou descarregando rápido? Resolvemos!</p>
+            </div>
+            <div class="servico-item" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-plug"></i>
+                <h3>Troca de Conector</h3>
+                <p>Problemas para carregar? Trocamos o conector de carga.</p>
+            </div>
+            <div class="servico-item" data-aos="fade-up" data-aos-delay="300">
+                <i class="fas fa-code"></i>
+                <h3>Problemas de Software</h3>
+                <p>Travamentos, lentidão, formatação e redefinições.</p>
+            </div>
+            <div class="servico-item" data-aos="fade-up" data-aos-delay="400">
+                <i class="fas fa-bug"></i>
+                <h3>Remoção de Vírus</h3>
+                <p>Eliminamos malwares e restauramos a segurança do seu aparelho.</p>
+            </div>
+            <div class="servico-item" data-aos="fade-up" data-aos-delay="500">
+                <i class="fas fa-headset"></i>
+                <h3>Outros Reparos</h3>
+                <p>Seu problema não está aqui? Fale conosco, nós podemos ajudar!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="galeria section-padded">
+        <h2 data-aos="fade-up">Consertos Recentes</h2>
+        <div class="imagens" data-aos="zoom-in">
+            <a href="img/concluido1.jpg" class="glightbox" data-gallery="consertos" data-title="">
+                <img src="img/concluido1.jpg" alt="Conserto de celular 1" />
+            </a>
+            <a href="img/concluido2.jpg" class="glightbox" data-gallery="consertos" data-title="">
+                <img src="img/concluido2.jpg" alt="Conserto de tablet 2" />
+            </a>
+            <a href="img/concluido3.jpg" class="glightbox" data-gallery="consertos" data-title="">
+                <img src="img/concluido3.jpg" alt="Conserto de notebook 3" />
+            </a>
+            <a href="img/concluido4.jpg" class="glightbox" data-gallery="consertos" data-title="">
+                <img src="img/concluido4.jpg" alt="Reparo de software 4" />
+            </a>
+        </div>
+    </section>
+
+    <section id="depoimentos" class="section-padded">
+        <h2 data-aos="fade-up">O Que Nossos Clientes Dizem</h2>
+        <div class="depoimento-grid">
+            <div class="depoimento-card" data-aos="fade-up" data-aos-delay="100">
+                <p>"Atendimento nota 10! Trocaram a tela do meu celular muito rápido e o preço foi justo ainda ganhei capinha e pelicula de brinde. Recomendo demais!"</p>
+                <div class="cliente-info">
+                    <img src="img/cliente1.jpg" alt="Foto do Cliente 1">
+                    <h4>João Silva</h4>
+                </div>
+            </div>
+            <div class="depoimento-card" data-aos="fade-up" data-aos-delay="200">
+                <p>"Meu celular tava cheio de vírus e lento. O menino da TopTech resolveu tudo e ainda ganhei brinde."</p>
+                <div class="cliente-info">
+                    <img src="img/cliente2.jpg" alt="Foto da Cliente 2">
+                    <h4>Maria Oliveira</h4>
+                </div>
+            </div>
+            <div class="depoimento-card" data-aos="fade-up" data-aos-delay="300">
+                <p>"Serviço impecável. Deixei meu telefone que não carregava e no mesmo dia já tava pronto. Confiança total!"</p>
+                <div class="cliente-info">
+                    <img src="img/cliente3.jpg" alt="Foto do Cliente 3">
+                    <h4>Carlos Souza</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="orcamento" class="section-padded">
+        <h2 data-aos="fade-up">Solicitar Orçamento</h2>
+        <p class="section-description" data-aos="fade-up">Preencha o formulário abaixo e receba um orçamento rápido via WhatsApp!</p>
+        <form id="formOrcamento" data-aos="zoom-in">
+            <label for="servico">Escolha o serviço:</label>
+            <select id="servico" required>
+                <option value="">--Selecione--</option>
+                <option value="Troca de Tela">Troca de Tela</option>
+                <option value="Troca de Bateria">Troca de Bateria</option>
+                <option value="Troca de Conector">Troca de Conector</option>
+                <option value="Problemas de Software">Problemas de Software</option>
+                <option value="Remoção de Vírus">Remoção de Vírus</option>
+                <option value="Outro">Outro</option>
+            </select>
+
+            <div id="outrosCampos" style="display: none;">
+                <input type="text" id="marca" placeholder="Marca do aparelho (Ex: Samsung, Apple)" />
+                <input type="text" id="modelo" placeholder="Modelo do aparelho (Ex: Galaxy S20, iPhone 12)" />
+            </div>
+
+            <div id="descricaoProblema" style="display: none;">
+                <textarea id="problemaOutro" placeholder="Descreva o problema em detalhes (Ex: 'Não liga', 'Água no aparelho', 'Botão quebrado')"></textarea>
+            </div>
+
+            <button type="submit" class="btn-whatsapp">
+                <i class="fab fa-whatsapp"></i> Solicitar Orçamento via WhatsApp
+            </button>
+        </form>
+    </section>
+
+    <section id="contato" class="section-padded">
+        <h2 data-aos="fade-up">Fale Conosco</h2>
+        <div class="contact-info" data-aos="fade-up">
+             <p><i class="fab fa-whatsapp"></i> WhatsApp: <a href="https://wa.me/5598985336331" target="_blank">(98) 98533-6331</a></p>
+            <p><i class="fab fa-instagram"></i> Instagram: <a href="https://www.instagram.com/toptech_bj/profilecard/?igsh=dHg0cWxlNThsMXgx" target="_blank">@toptech_bj</a></p>
+            <p><i class="fas fa-map-marker-alt"></i> Localização: Estamos em Bom Jardim - MA, em frente à Lotérica!</p>
+            <p><i class="fas fa-phone-alt"></i> Telefone: <a href="tel:+5598985336331">(98) 98533-6331</a> </p>
+        </div>
+    </section>
+
+    <footer>
+        <h3>Políticas e Termos</h3>
+        <div class="footer-policies">
+            <p><strong>Garantia:</strong> Oferecemos 90 dias de garantia para trocas de peças. Esta garantia não cobre danos por mau uso, quedas ou contato com líquidos.</p>
+            <p><strong>Manutenção de Software:</strong> Desbloqueios e formatações apenas com nota fiscal do aparelho. Sempre realize backup de suas informações antes de qualquer serviço de software.</p>
+        </div>
+        <p class="copyright">© 2025 TopTech Assistência Técnica. Todos os direitos reservados.</p>
+    </footer>
+
+    <div class="floating-buttons">
+        <a href="https://wa.me/5598985336331" target="_blank" class="floating-btn whatsapp-btn" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="tel:+5598985336331" class="floating-btn phone-btn" aria-label="Ligar">
+            <i class="fas fa-phone-alt"></i>
+        </a>
+        <a href="https://maps.app.goo.gl/SEU_LINK_AQUI" target="_blank" class="floating-btn map-btn" aria-label="Localização">
+            <i class="fas fa-map-marker-alt"></i>
+        </a>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
