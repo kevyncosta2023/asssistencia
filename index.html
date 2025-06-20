@@ -14,21 +14,23 @@
 </head>
 <body>
     <header>
-        <img src="img/logo.png" alt="TopTech Logo" class="logo" />
+        <a href="#" class="logo-link">
+            <img src="img/logo.png" alt="TopTech Logo" class="logo" />
+        </a>
         <nav class="main-nav">
             <a href="#servicos">Serviços</a>
             <a href="#orcamento">Orçamento</a>
             <a href="#contato">Contato</a>
         </nav>
         <button class="menu-toggle" aria-label="Abrir Menu">
-            <i class="fas fa-bars"></i>
+            <div class="hamburger"></div>
         </button>
     </header>
 
     <section class="hero-banner">
         <div class="banner-content">
             <h1>Bem-vindo à TopTech <br><span>Assistência Técnica</span></h1>
-            <p class="subtitle">Especialista em <span id="typed-services"></span></p>
+            <p class="subtitle">Especialistas em <span id="typed-services"></span></p>
             <a href="#orcamento" class="btn-cta">Solicitar Orçamento Agora</a>
         </div>
     </section>
@@ -72,16 +74,16 @@
     <section class="galeria section-padded">
         <h2 data-aos="fade-up">Consertos Recentes</h2>
         <div class="imagens" data-aos="zoom-in">
-            <a href="img/concluido1.jpg" class="glightbox" data-gallery="consertos" data-title="">
+            <a href="img/concluido1.jpg" class="glightbox" data-gallery="consertos" data-title="Reparo de tela">
                 <img src="img/concluido1.jpg" alt="Conserto de celular 1" />
             </a>
-            <a href="img/concluido2.jpg" class="glightbox" data-gallery="consertos" data-title="">
+            <a href="img/concluido2.jpg" class="glightbox" data-gallery="consertos" data-title="Manutenção de tablet">
                 <img src="img/concluido2.jpg" alt="Conserto de tablet 2" />
             </a>
-            <a href="img/concluido3.jpg" class="glightbox" data-gallery="consertos" data-title="">
+            <a href="img/concluido3.jpg" class="glightbox" data-gallery="consertos" data-title="Conserto de notebook">
                 <img src="img/concluido3.jpg" alt="Conserto de notebook 3" />
             </a>
-            <a href="img/concluido4.jpg" class="glightbox" data-gallery="consertos" data-title="">
+            <a href="img/concluido4.jpg" class="glightbox" data-gallery="consertos" data-title="Reparo de software">
                 <img src="img/concluido4.jpg" alt="Reparo de software 4" />
             </a>
         </div>
@@ -91,21 +93,21 @@
         <h2 data-aos="fade-up">O Que Nossos Clientes Dizem</h2>
         <div class="depoimento-grid">
             <div class="depoimento-card" data-aos="fade-up" data-aos-delay="100">
-                <p>"Atendimento nota 10! Trocaram a tela do meu celular muito rápido e o preço foi justo ainda ganhei capinha e pelicula de brinde. Recomendo demais!"</p>
+                <p>"Atendimento nota 10! Trocaram a tela do meu celular muito rápido e o preço foi justo. Recomendo demais!"</p>
                 <div class="cliente-info">
                     <img src="img/cliente1.jpg" alt="Foto do Cliente 1">
                     <h4>João Silva</h4>
                 </div>
             </div>
             <div class="depoimento-card" data-aos="fade-up" data-aos-delay="200">
-                <p>"Meu celular tava cheio de vírus e lento. O menino da TopTech resolveu tudo e ainda ganhei brinde."</p>
+                <p>"Meu notebook estava cheio de vírus e lento. O pessoal da TopTech resolveu tudo e ainda deram umas dicas de segurança."</p>
                 <div class="cliente-info">
                     <img src="img/cliente2.jpg" alt="Foto da Cliente 2">
                     <h4>Maria Oliveira</h4>
                 </div>
             </div>
             <div class="depoimento-card" data-aos="fade-up" data-aos-delay="300">
-                <p>"Serviço impecável. Deixei meu telefone que não carregava e no mesmo dia já tava pronto. Confiança total!"</p>
+                <p>"Serviço impecável. Deixei meu telefone que não carregava e no mesmo dia já estava pronto. Confiança total!"</p>
                 <div class="cliente-info">
                     <img src="img/cliente3.jpg" alt="Foto do Cliente 3">
                     <h4>Carlos Souza</h4>
@@ -147,7 +149,7 @@
     <section id="contato" class="section-padded">
         <h2 data-aos="fade-up">Fale Conosco</h2>
         <div class="contact-info" data-aos="fade-up">
-             <p><i class="fab fa-whatsapp"></i> WhatsApp: <a href="https://wa.me/5598985336331" target="_blank">(98) 98533-6331</a></p>
+            <p><i class="fab fa-whatsapp"></i> WhatsApp: <a href="https://wa.me/5598985336331" target="_blank">(98) 98533-6331</a></p>
             <p><i class="fab fa-instagram"></i> Instagram: <a href="https://www.instagram.com/toptech_bj/profilecard/?igsh=dHg0cWxlNThsMXgx" target="_blank">@toptech_bj</a></p>
             <p><i class="fas fa-map-marker-alt"></i> Localização: Estamos em Bom Jardim - MA, em frente à Lotérica!</p>
             <p><i class="fas fa-phone-alt"></i> Telefone: <a href="tel:+5598985336331">(98) 98533-6331</a> </p>
@@ -178,7 +180,6 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    
     <script src="script.js"></script>
 </body>
 </html>
