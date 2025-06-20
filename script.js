@@ -1,53 +1,34 @@
 document.addEventListener("DOMContentLoaded", function() {
 
-    
-    AOS.init({
-        duration: 800,  
-        once: true,     
-        offset: 50,     
-    });
-
-
-    const lightbox = GLightbox({
-        selector: '.glightbox',
-        touchNavigation: true,
-        loop: true,
-    });
-
-
+    // --- INICIALIZAÇÃO DAS BIBLIOTECAS ---
+    AOS.init({ duration: 800, once: true, offset: 50 });
+    GLightbox({ selector: '.glightbox', touchNavigation: true, loop: true });
     new Typed('#typed-services', {
-        strings: [
-            'Troca de Telas.',
-            'Troca de Baterias.',
-            'Remoção de Vírus.',
-            'Reparos de Software.',
-            'e muito mais!'
-        ],
-        typeSpeed: 70,
-        backSpeed: 40,
-        loop: true,
-        showCursor: true,
-        cursorChar: '|',
+        strings: ['Troca de Telas.', 'Troca de Baterias.', 'Remoção de Vírus.', 'Reparos de Software.', 'e muito mais!'],
+        typeSpeed: 70, backSpeed: 40, loop: true, showCursor: true, cursorChar: '|',
     });
 
+    // --- LÓGICA DO SITE ---
 
+    // Funcionalidade do Menu Responsivo Aprimorado
     const menuToggle = document.querySelector(".menu-toggle");
     const mainNav = document.querySelector(".main-nav");
 
     menuToggle.addEventListener("click", function() {
+        menuToggle.classList.toggle("active");
         mainNav.classList.toggle("active");
     });
 
     mainNav.querySelectorAll("a").forEach(link => {
         link.addEventListener("click", function() {
-            if (window.innerWidth <= 768) {
+            if (mainNav.classList.contains("active")) {
+                menuToggle.classList.remove("active");
                 mainNav.classList.remove("active");
             }
         });
     });
 
-
-
+    // Lógica do Formulário de Orçamento
     const servicoSelect = document.getElementById("servico");
     const descricaoProblemaDiv = document.getElementById("descricaoProblema");
     const outrosCamposDiv = document.getElementById("outrosCampos");
@@ -60,7 +41,6 @@ document.addEventListener("DOMContentLoaded", function() {
         const servicoValue = servicoSelect.value;
         descricaoProblemaDiv.style.display = servicoValue === "Outro" ? "block" : "none";
         outrosCamposDiv.style.display = servicoValue !== "" && servicoValue !== "Outro" ? "block" : "none";
-
         problemaOutroTextarea.required = servicoValue === "Outro";
         marcaInput.required = servicoValue !== "" && servicoValue !== "Outro";
         modeloInput.required = servicoValue !== "" && servicoValue !== "Outro";
@@ -71,34 +51,20 @@ document.addEventListener("DOMContentLoaded", function() {
 
     formOrcamento.addEventListener("submit", function(e) {
         e.preventDefault();
-
         const servico = servicoSelect.value;
         let mensagem = "Olá, TopTech! Gostaria de solicitar um orçamento para: ";
 
         if (servico === "Outro") {
-            const problema = problemaOutroTextarea.value.trim();
-            if (!problema) {
-                alert("Por favor, descreva o problema.");
-                return;
-            }
-            mensagem += `o seguinte problema: ${problema}.`;
+            mensagem += `o seguinte problema: ${problemaOutroTextarea.value.trim()}.`;
         } else {
-            const marca = marcaInput.value.trim();
-            const modelo = modeloInput.value.trim();
-            if (!marca || !modelo) {
-                alert("Por favor, preencha a marca e o modelo do aparelho.");
-                return;
-            }
-            mensagem += `${servico} no aparelho ${marca} ${modelo}.`;
+            mensagem += `${servico} no aparelho ${marcaInput.value.trim()} ${modeloInput.value.trim()}.`;
         }
         
         mensagem += "\nAguardo o contato. Obrigado!";
-
-        const numeroWhatsApp = "5598985336331";
+        const numeroWhatsApp = "5598985336331"; // <-- VERIFIQUE SE ESTE NÚMERO ESTÁ CORRETO!
         const linkWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagem)}`;
         
         window.open(linkWhatsApp, "_blank");
-
         formOrcamento.reset();
         toggleOrcamentoFields();
     });
