@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
         
         mensagem += "\nAguardo o contato. Obrigado!";
-        const numeroWhatsApp = "5598985336331"; // <-- VERIFIQUE SE ESTE NÚMERO ESTÁ CORRETO!
+        const numeroWhatsApp = "5598985516859"; // <-- VERIFIQUE SE ESTE NÚMERO ESTÁ CORRETO!
         const linkWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagem)}`;
         
         window.open(linkWhatsApp, "_blank");
